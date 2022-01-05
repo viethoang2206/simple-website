@@ -29,3 +29,6 @@ $ npm start
 ## License
 
 MIT
+
+# Link to deploy website 
+http://digital-marketing-prj.surge.sh/

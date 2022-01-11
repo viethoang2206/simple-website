@@ -1,0 +1,491 @@
+@import'reset';
+@import'variables';
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+
+header{
+    
+    background: transparent;
+    padding-top: 50px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+       
+        
+        .font-adjustment{
+            font-size: 30px;
+        }
+       a{
+           color: white;
+       }
+        nav{
+            display: flex;
+            >ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                >li{
+                    margin-left:20px;
+                    .arrow{
+                        display: flex;
+                        color: white;
+                        i{
+                            margin-top: 4px;
+                            font-size: 10px;
+                            padding-left: 5px;
+                        }
+                    }
+                    a{
+                        color: white;
+                        &:hover{
+                            color: #f5104e;
+                        }
+                    }
+                    &:hover{
+                        >ul.dropdown{
+                            display: block;
+                        }
+                    }
+                    >ul.dropdown{
+                        position: absolute;
+                        background:#222;
+                        transition:all 0.4s;
+                        z-index: 99;
+                        display: none;
+                        width: 150px;
+                        >li{
+                            padding: 8px 16px;
+                            &:hover{
+                                background: #333;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}
+.content-padding{
+    padding-bottom: 50px;
+}
+.bg{
+    background: url('https://demo.w3layouts.com/demosWTR/Freedom/01-11-2019/franchisor-freedom-demo_Free/632254492/web/assets/images/banner-3.jpg')top center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index:2 ;
+    .bg-content{
+        position: relative;
+        color: white;
+        top: 50%;
+        
+        transform: translateY(-70%);
+        
+    }
+    
+    h1{
+        font-size: 60px;
+    }
+    .icon{
+        display: flex;
+        .description{
+            padding-right: 100px;
+            display: flex;
+            align-items: center;
+            i{
+                color: #2231f6;
+                font-size: 30px;
+                padding:20px;
+                background: white;
+                border: 1px solid white;
+                border-radius: 50%;
+            }
+            .icon-adjustment{
+                padding:18px 24px;
+            }
+            p{
+                font-size: 15px;
+                padding-left: 20px;
+            }
+            span{
+                font-size: 25px;
+                font-weight: bold;
+            }
+            a{
+                color: white;
+            }
+        }
+    }
+    
+}
+.companies{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    
+    img{
+        width: 80%;
+    }
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background: grey;
+}
+.business-ideas{
+    margin-top: 100px;
+    display: flex;
+    .right-side
+    {
+        
+        h1{
+            font-size: 40px;
+            padding-bottom: 20px;
+        }
+        p{
+            font-size: 18px;
+            color: #777777;
+            padding-bottom: 40px;
+        }
+        width: 100%;
+        li{
+            font-size: 18px;
+            color: #777777;
+            padding-bottom: 20px;
+            
+        }
+        .fa-check-square{
+            margin-right: 20px;
+            color: blue;
+        }
+        
+    }
+    .left-side{
+        img{
+            width: 100%;
+        }
+    }
+}
+.read-more{
+    display: flex;
+    
+    a{
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        color: black;
+        transition: all 0.4s;
+        &:hover{
+            color: #f5104e;
+        }
+        
+    }
+    span{
+        padding-left: 5px;
+        
+        font-size: 13px;
+        
+    }
+    p{
+        color: black;
+        
+    }
+    
+    
+}
+.stats{
+    color: white;
+    font-size: 25px;
+    background: #20267c;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    text-align: center;
+
+    .frame-adjustment{
+        margin-left: 00px;
+    }
+    .frame{
+       
+        margin: 50px 0;
+        padding: 10px 100px;
+        border-right: 1px solid #777777;;
+        text-align: center;
+        &:last-child{
+            border-right: none;
+            
+        }
+        
+    }
+    
+}.banner{
+    background: url('https://demo.w3layouts.com/demosWTR/Freedom/01-11-2019/franchisor-freedom-demo_Free/632254492/web/assets/images/content_4.jpg') top left no-repeat;
+    position: relative;
+    z-index: 0;
+    &::before{
+        content: "";
+        background: rgba(black,0.7);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -99;
+    }
+    .container{
+        padding: 100px 0px;
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        .banner-content-1{
+            width: 300px;
+            h5{
+                font-weight: bold;
+                padding-bottom: 20px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+        .banner-content-2{
+            width: 700px;
+            h1{
+                font-size: 35px;
+            }
+            .read-more{
+                padding-top: 20px;
+                a{
+                    color: white;
+                    transition: all 0.4s;
+                    &:hover{
+                        color: #f5104e;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+.services{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+    h1{
+        padding-bottom: 20px;
+    }
+    p{
+        color: #777777;
+    }
+}
+.features{
+    display: flex;
+    .tabs{
+        
+        margin-left: 30px;
+        border: 1px solid #777777;
+        text-align: center;
+        img{
+            width: 100%;
+        }
+        .tabs-content{
+            h3{
+                padding-bottom: 20px;
+            }
+            p{
+                color: #777777;
+            }
+            margin: 0 auto;
+            text-align: center;
+            width: 200px;
+            padding: 20px 0px;
+        }
+    }
+}
+.banner-2{
+    background: url('https://demo.w3layouts.com/demosWTR/Freedom/01-11-2019/franchisor-freedom-demo_Free/632254492/web/assets/images/customer_bg.jpg') center no-repeat;
+    padding: 50px 0px;
+    margin-top: 100px;
+    color: white;
+    position: relative;
+    z-index: -2;
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        background: linear-gradient(45deg, #1625ef, #f3f3f300);;
+    }
+    .container{
+        .profile{
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            img{
+                border: 1px solid transparent;
+                border-radius: 50%;
+                width: 7%;
+            }
+            p{
+                font-size: 20px;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+.corporate{
+    text-align: center;
+    margin-top: 50px;
+    h1{
+        padding: 20px 0px;
+        font-size: 40px;
+    }
+    p{
+        
+        color: #777777;
+        padding-top: 20px;
+    }
+    .search{
+        form{
+            display: flex;
+            justify-content: center;
+            input{
+                width: 300px;
+                padding: 15px 20px;
+                background: #E1E9F0;
+               
+            }
+            button{
+                background: #2231f6;
+                color: #F5F9FC;
+                width: 140px;
+                padding:8px 17px;
+                &:hover{
+                    background: red;
+                }
+            }
+        }
+    }
+}
+.links{
+    background: black;
+    color: white;
+    margin-top: 50px;
+    padding:50px 0px;
+    .container{
+        display: flex;
+        
+        justify-content: space-between;
+        .link-tabs{
+            ul.medias{
+                display: flex;
+                li{
+                    padding-right: 20px;
+                    padding-top: 20px;
+                }
+                .fa-facebook{
+                    color: #3b5998;
+                }
+                .fa-twitter{
+                    color: #00acee;
+                }
+                .fa-instagram{
+                    color: #3f729b;
+                }
+
+            }
+            h2{
+                padding-bottom: 20px;
+            }
+            a{
+                color: #777777;
+                &:hover{
+                    color: #f5104e;
+                }
+            }
+            ul{
+                li{
+                    padding-bottom: 10px;
+                    
+                }
+            }
+            p{
+                color: #777777;
+            }
+            span{
+                color: #f5104e;
+            }
+            
+        }
+        .search{
+            form{
+               
+                display: flex;
+                
+                input{
+                    width: 200px;
+                    padding: 10px 20px;
+                    background: #E1E9F0;
+                   
+                }
+                button{
+                    background: #2231f6;
+                    color: #F5F9FC;
+                    width: 80px;
+                    padding:8px 10px;
+                    
+                    &:hover{
+                        background: red;
+                    }
+                    i{
+                        
+                        font-size: 15px;
+                        
+                    }
+                }
+            }
+            p{
+                padding-top: 20px;
+            }
+        }
+    }
+}
+button{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.square{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background:#f5104e ;
+    border: 1px solid #f5104e;
+    border-radius: 5px;
+    z-index: 1;
+    
+    i{
+        color: white;
+        position: absolute;
+        
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+.padding{
+    padding-bottom: 50px;
+}
+
